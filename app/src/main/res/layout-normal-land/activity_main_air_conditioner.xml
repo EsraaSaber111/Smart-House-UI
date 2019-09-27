@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".MainAirConditionerActivity"
+    android:orientation="vertical"
+    android:background="@drawable/fragback"
+    tools:ignore="MissingDefaultResource">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="5"
+                android:src="@drawable/ic_silvermedal" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="HouseTech"
+                android:textColor="#ffffff"
+                android:gravity="left"
+                android:textSize="9sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textColor="#ffffff"
+                android:text=" AC "
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <ImageButton
+                android:id="@+id/room"
+                android:background="@null"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:src="@drawable/ic_hous"
+                android:onClick="Room"
+                tools:ignore="OnClick"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="20dp">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ToggleButton
+                        android:id="@+id/air_toggle"
+                        android:layout_width="47dp"
+                        android:layout_height="35dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/toggle_swich"
+                        android:src="@drawable/ic_switch"
+                        android:textOff=" "
+                        android:textOn=" " />
+
+                    <com.marcinmoskala.arcseekbar.ArcSeekBar
+                        android:id="@+id/air_arcseekbar"
+                        android:layout_width="140dp"
+                        android:layout_height="140dp"
+                        android:background="@drawable/circle"
+                        app:progressBackgroundColor="@color/colorPrimary"
+                        app:progressWidth="10dp"
+                        app:roundEdges="true" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:id="@+id/air_desigred"
+                        android:layout_width="100dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text=" Desired "
+                        android:textColor="#ffffff"
+                        android:textSize="10sp" />
+
+                    <Button
+                        android:layout_width="@dimen/buttw"
+                        android:layout_height="@dimen/butth"
+                        android:background="@drawable/cutbackgrou" />
+
+
+                    <Button
+                        android:layout_width="@dimen/buttw"
+                        android:layout_height="@dimen/butth"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/cutbackgrou" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:text=" Current Tempreture "
+                        android:textColor="#ffffff"
+                        android:textSize="10sp" />
+
+                    <Button
+                        android:layout_width="@dimen/buttw"
+                        android:layout_height="@dimen/butth"
+                        android:background="@drawable/cutbackgrou" />
+
+
+                    <Button
+                        android:layout_width="@dimen/buttw"
+                        android:layout_height="@dimen/butth"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/cutbackgrou" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center">
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="10dp"
+
+
+            >
+            <Button
+                android:id="@+id/air_cold"
+                android:layout_width="@dimen/buttw"
+                android:layout_height="@dimen/butth"
+                android:background="@drawable/linear_background"
+                android:text="cold"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="10sp"
+                android:drawableLeft="@drawable/ic_snow"/>
+
+            <Button
+                android:id="@+id/air_cool"
+                android:layout_width="@dimen/buttw"
+                android:layout_height="@dimen/butth"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/linear_background"
+                android:text="cool" android:textStyle="bold"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="10sp"
+                android:drawableLeft="@drawable/ic_flower"/>
+            <Button
+                android:id="@+id/air_heat"
+                android:layout_marginLeft="20dp"
+                android:layout_width="@dimen/buttw"
+                android:layout_height="@dimen/butth"
+                android:background="@drawable/linear_background"
+                android:text="Heat"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="10sp"
+                android:drawableLeft="@drawable/ic_sun_hidden_partially_by_cloud"/>
+
+            <Button
+                android:id="@+id/air_fan"
+                android:layout_marginLeft="20dp"
+                android:layout_width="@dimen/buttw"
+                android:layout_height="@dimen/butth"
+                android:background="@drawable/linear_background"
+                android:text="Fan"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="10sp"
+                android:drawableLeft="@drawable/ic_ac"
+                />
+            <Button
+                android:id="@+id/air_auto"
+                android:layout_marginLeft="20dp"
+                android:layout_width="@dimen/buttw"
+                android:layout_height="@dimen/butth"
+                android:background="@drawable/linear_background"
+                android:text="auto"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="10sp"
+                android:drawableLeft="@drawable/ic_fan"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

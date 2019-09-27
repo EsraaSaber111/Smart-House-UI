@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingDefaultResource">
+    <tab
+        id="@+id/home"
+        icon="@drawable/ic_home"
+        title="Home" />
+
+    <tab
+        id="@+id/favorite"
+        icon="@drawable/ic_air_conditioner"
+        title="AC" />
+
+    <tab
+        id="@+id/search"
+        icon="@drawable/ic_curtain"
+        title="Curtain"
+        />
+
+    <tab
+        id="@+id/link"
+        icon="@drawable/if_bulb"
+        title="Lights" />
+
+    <tab
+        id="@+id/add"
+        icon="@drawable/ic_wipe_97583"
+        title="Clean" />
+</tabs>

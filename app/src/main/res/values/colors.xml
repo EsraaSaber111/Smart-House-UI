@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#bebebe</color>
+    <color name="colorPrimaryDark">#807f7f</color>
+    <color name="colorAccent">#7FABDA</color>
+    <color name="brown">#4f2e1700</color>
+    <color name="browne">#a02e1700</color>
+    <color name="bubble">#7FABDA</color>
+
+    <array name="colors">
+        <item>#ffd001</item>
+
+        <item>#ffa339</item>
+
+        <item>#f78b39</item>
+
+        <item>#fa3936</item>
+
+    </array>
+</resources>

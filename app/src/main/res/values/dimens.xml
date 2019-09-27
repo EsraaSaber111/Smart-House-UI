@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <dimen name="butth" tools:ignore="DuplicateDefinition">30dp</dimen>
+    <dimen name="buttw">50dp</dimen>
+    <dimen name="minw" tools:ignore="MissingDefaultResource">30dp</dimen>
+</resources>
